@@ -76,7 +76,7 @@
 	// Simular obtención de token
 	const token = "TOKEN123456";
 	// Restablece la tabla visual
-    const apiURL = "http://localhost/www-project-randomized-header-channel-for-csrf-protection/PoC/api/";
+    const apiURL = "http://localhost/www-project-randomized-header-channel-for-csrf-protection/PoC/level_1_basic/api/";
 
 	// ===============================
 	// INICIALIZACIÓN
