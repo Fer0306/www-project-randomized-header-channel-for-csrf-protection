@@ -22,9 +22,11 @@ El cliente utiliza una tabla con encabezados válidos definida desde el inicio y
 4. El servidor valida el header y el token.
 
 ### **Ejemplo HTTP**
+```http
 POST /v1/transfer
 X-RHC-Header-2: 6F8dP2sQ9RmC1aZ7Xh4K
 Content-Type: application/json
+```
 
 ---
 
@@ -207,5 +209,6 @@ Pruebas de:
 - canales paralelos
 
 ---
+
 
 
