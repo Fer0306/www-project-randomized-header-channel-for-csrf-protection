@@ -154,7 +154,7 @@ Este comportamiento es FCHA en entorno real:
 > y análisis posterior del autor — *"El sistema no fue comprometido. Fue convencido."*  
 > Ver en: [`docs/references.md`](docs/references.md)
 
-📊 **Análisis estructurado del caso:**
+📊 **Validación estructurada del modelo FCHA mediante evidencia observada:**
 > Ver [`docs/evidence-mapping.md`](docs/evidence-mapping.md)
 
 ---
