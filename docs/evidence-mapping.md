@@ -1,7 +1,8 @@
 > ℹ️ **Note:** This document is written in Spanish. You can use your browser to translate it into English.  
 > The Spanish version is preserved intentionally as part of the project's authorship and intellectual identity.  
 
-# 🔎 Evidence Mapping — FCHA Model Validation
+# 🔎 Mapeo de Evidencia — Validación del Modelo FCHA
+### Evidence Mapping — FCHA Model Validation
 
 **Autor:** Fernando Flores Alvarado  
 **Proyecto Original:** RHC Protocol Core — (Randomized Header Channel)  
