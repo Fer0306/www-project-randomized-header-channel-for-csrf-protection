@@ -55,6 +55,12 @@ Mecanismos que gestionan y hacen cumplir quién puede acceder a sistemas, recurs
 Una base de conocimiento de acceso público que modela el **comportamiento real de los atacantes, incluyendo tácticas, técnicas y procedimientos (TTPs)**.
 Se enfoca en cómo operan los adversarios, en lugar de centrarse en controles defensivos.
 
+### ZERO TRUST
+Modelo de seguridad basado en el principio “nunca confiar, siempre verificar”.
+Formalizado por NIST SP 800-207, establece que cada solicitud, entidad o flujo de comunicación debe validarse continuamente, independientemente de su origen, ubicación o contexto previo de confianza.
+
+Zero Trust se enfoca principalmente en identidad, autenticación, autorización y evaluación continua de confianza dentro de arquitecturas distribuidas.
+
 ---
 
 ## 2. Mecanismos y tecnologías de seguridad

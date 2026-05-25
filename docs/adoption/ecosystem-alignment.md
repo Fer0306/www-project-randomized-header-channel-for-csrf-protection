@@ -13,9 +13,11 @@ Información detallada sobre versiones, fechas, estado y metadatos completos, co
 
 ## Visión General  
 
-El **Randomized Header Channel (RHC)** es un **mecanismo proactivo de endurecimiento del canal de comunicación a nivel de flujo**.  
-**No reemplaza** la autenticación, autorización, el cifrado ni las prácticas de codificación segura.  
-En su lugar, **reduce la predictibilidad del canal y la viabilidad de automatización**, incrementando el costo operativo para el atacante.
+El **Randomized Header Channel (RHC)** es un **protocolo de integridad contextual del canal de comunicación** que introduce una **capa transversal denominada Communication Integrity Layer (CIL)**, ubicada entre la capa de transporte y los mecanismos tradicionales de autenticación y seguridad de aplicación.
+
+RHC no reemplaza TLS, autenticación, autorización ni controles tradicionales de seguridad.
+
+Su objetivo es **introducir validación contextual, continuidad verificable y coherencia estructural sobre el flujo de comunicación** entre componentes distribuidos.
 
 ---
 
@@ -66,7 +68,62 @@ RHC incrementa la complejidad de los ataques y disminuye la capacidad de escalar
 
 ---
 
-## 4. Alineación con Estándares de Verificación OWASP (ASVS / MASVS / AIVSS)  
+## 4. Mapeo con Zero Trust  
+
+> Zero Trust es un modelo de seguridad que elimina la confianza implícita dentro y fuera del perímetro de red,  
+> requiriendo verificación continua de identidad, contexto y privilegios antes de conceder acceso a cualquier recurso.  
+>
+> La referencia normativa principal es **NIST SP 800-207 — Zero Trust Architecture**.  
+
+---
+
+### Posicionamiento  
+
+El modelo Zero Trust opera bajo el principio central **"Never Trust, Always Verify"**, aplicado principalmente a:  
+
+- Identidad del usuario o entidad solicitante  
+- Estado del dispositivo  
+- Privilegios y nivel de acceso  
+- Contexto de la solicitud individual  
+
+RHC no reemplaza estos mecanismos de verificación.  
+
+Su contribución es distinta: **introduce verificación sobre el canal de comunicación como entidad propia**, validando no solo *quién* realiza una solicitud, sino **si el comportamiento del canal a lo largo del flujo es coherente, continuo y estructuralmente válido**.  
+
+> Zero Trust verifica **la identidad de quien solicita**.  
+> RHC verifica **la coherencia del canal por el que fluye esa solicitud**.  
+
+---
+
+### Alineación con los pilares de Zero Trust (NIST SP 800-207)  
+
+| Pilar Zero Trust | Principio | Contribución de RHC |
+|---|---|---|
+| Verificación explícita | Autenticar y autorizar siempre, usando todos los datos disponibles | RHC amplía los datos disponibles para verificación al exponer el comportamiento del canal como una capa adicional de validación |
+| Acceso de mínimo privilegio | Limitar el acceso de usuarios, dispositivos y servicios al mínimo necesario | RHC introduce fricción técnica en el canal que eleva el costo de explotación sobre flujos legítimos comprometidos |
+| Asumir la brecha | Operar asumiendo que el entorno puede estar comprometido | RHC hace observable la coherencia estructural del canal como secuencia temporal de comunicación, permitiendo identificar patrones, variabilidad y anomalías estructurales independientemente del contenido de los mensajes |
+| Verificación continua | Evaluar el contexto en cada solicitud, no solo en el acceso inicial | RHC introduce continuidad verificable como propiedad del canal, complementando la verificación por solicitud con validación de coherencia entre solicitudes |
+
+---
+
+### Posicionamiento técnico  
+
+Zero Trust verifica la **identidad, el contexto y los privilegios asociados a cada solicitud individual**.  
+
+RHC introduce una verificación adicional sobre la **coherencia del comportamiento en el canal de comunicación como secuencia en el tiempo**.  
+
+Esto implica que:  
+
+- Zero Trust valida **quién realiza cada solicitud y bajo qué condiciones**  
+- RHC/CIL valida **si el canal por el que fluyen esas solicitudes mantiene continuidad, variabilidad y coherencia estructural**  
+
+RHC no reemplaza Zero Trust — lo **complementa al introducir una capa de verificación no modelada explícitamente en NIST SP 800-207: la integridad estructural y continuidad del canal de comunicación a nivel de flujo**.
+
+> 📎 Referencia oficial: [NIST SP 800-207 — Zero Trust Architecture](https://csrc.nist.gov/publications/detail/sp/800-207/final)  
+
+---
+
+## 5. Alineación con Estándares de Verificación OWASP (ASVS / MASVS / AIVSS)  
 
 > Esta sección extiende el mapeo de ecosistema del protocolo RHC, incorporando los estándares de verificación de seguridad de OWASP como una capa complementaria de posicionamiento.  
 >
@@ -74,7 +131,7 @@ RHC incrementa la complejidad de los ataques y disminuye la capacidad de escalar
 
 ---
 
-### 4.1 Naturaleza de la alineación  
+### 5.1 Naturaleza de la alineación  
 
 A diferencia del OWASP Top 10, que describe categorías de riesgo, los estándares como ASVS, MASVS y AIVSS definen **controles verificables** para evaluar el nivel de seguridad de un sistema.  
 
@@ -92,11 +149,11 @@ Esto complementa los enfoques tradicionales centrados en:
 
 ---
 
-### 4.2 Alineación por estándar  
+### 5.2 Alineación por estándar  
 
 ---
 
-#### 4.2.1 OWASP ASVS — Application Security Verification Standard (v5.0.0)  
+#### 5.2.1 OWASP ASVS — Application Security Verification Standard (v5.0.0)  
 
 El **OWASP ASVS v5.0.0** define un marco de verificación de seguridad para aplicaciones web basado en:  
 
@@ -140,7 +197,7 @@ RHC no contradice ASVS — lo **complementa al añadir una capa transversal entr
 
 ---
 
-#### 4.2.2 OWASP MASVS — Mobile Application Security Verification Standard (v2.x)  
+#### 5.2.2 OWASP MASVS — Mobile Application Security Verification Standard (v2.x)  
 
 El **OWASP MASVS v2.x** define controles de seguridad para aplicaciones móviles organizados en categorías funcionales.  
 
@@ -175,7 +232,7 @@ RHC no reemplaza MASVS — lo complementa al añadir validación sobre la contin
 
 ---
 
-#### 4.2.3 OWASP AIVSS — AI Security Verification Standard (v1.0, en desarrollo)  
+#### 5.2.3 OWASP AIVSS — AI Security Verification Standard (v1.0, en desarrollo)  
 
 El **OWASP AIVSS v1.0** define controles para la verificación de seguridad en sistemas basados en inteligencia artificial, incluyendo modelos, flujos de interacción y sistemas multi-agente.  
 
@@ -213,7 +270,7 @@ RHC no reemplaza AIVSS — lo complementa al añadir validación sobre la secuen
 
 ---
 
-### 4.3 Posición de RHC/CIL en los estándares de verificación OWASP  
+### 5.3 Posición de RHC/CIL en los estándares de verificación OWASP  
 
 | Estándar | Versión | Relación principal con RHC | Tipo de relación |
 |---|---|---|---|
@@ -225,7 +282,7 @@ RHC no reemplaza AIVSS — lo complementa al añadir validación sobre la secuen
 
 ---
 
-### 4.4 Síntesis técnica transversal  
+### 5.4 Síntesis técnica transversal  
 
 A partir de la alineación presentada en ASVS, MASVS y AIVSS, se observa un patrón común:  
 
@@ -245,7 +302,7 @@ RHC no reemplaza estos estándares — los **complementa introduciendo una capa 
 
 ---
 
-### 4.5 Referencias al análisis detallado  
+### 5.5 Referencias al análisis detallado  
 
 El análisis formal de la alineación con cada estándar se encuentra en los siguientes documentos:  
 
@@ -260,7 +317,7 @@ El análisis formal de la alineación con cada estándar se encuentra en los sig
 
 ---
 
-## 5. Declaración Profesional de Posicionamiento  
+## 6. Declaración Profesional de Posicionamiento  
 
 **Redacción correcta:**  
 RHC complementa a OWASP, NIST y MITRE, así como a los estándares de verificación OWASP (ASVS, MASVS y AIVSS), al reducir la predictibilidad del canal de comunicación y limitar la explotación automatizada a escala.
@@ -270,7 +327,7 @@ Que RHC reemplaza el cifrado, la autenticación, OWASP Top 10 o los estándares 
 
 ---
 
-## 6. Glosario  
+## 7. Glosario  
 
 - [📖 Terminología](./terminology.md)  
 

@@ -135,6 +135,21 @@ modelo de dispersión aleatoria y entropía controlada (*Controlled Chaos*).
 - Creación de `docs/evidence-mapping.md`:
   documento de correlación formal entre evidencia empírica,
   modelo FCHA y respuesta RHC.
+- Creación de `docs/botellacontrol-evidence.md`:
+  documentación arquitectónica e histórica del prototipo distribuido
+  BotellaControl como origen empírico de RHC/CIL.
+  - Formalización documental del contexto original de BotellaControl:
+    aclarando que el sistema corresponde a un prototipo funcional local
+    con arquitectura distribuida y mecanismos de autenticación
+    contextual y certificación de canal para entidades heterogéneas
+    desarrollados empíricamente bajo una misma autoridad de
+    certificación antes de la conceptualización formal de RHC.
+  - Incorporación de trazabilidad histórica sobre la evolución:
+    herramienta experimental → plataforma SaaS → trust layer distribuida →
+    pre-certificación de canal → formalización conceptual de RHC/CIL.
+  - Documentación explícita de que el mecanismo fue desarrollado
+    independientemente y sin conocimiento previo de estándares modernos
+    como OAuth 2.0 Client Credentials Flow o mTLS durante su desarrollo inicial.
 
 #### 🧩 Formalización transversal de CIL
 - Creación de `docs/cross-standard-gap-analysis.md`:
@@ -154,7 +169,12 @@ Esta versión consolida el protocolo como un proyecto de investigación document
 
 ### Cambios previstos:
 - Modularización del protocolo RHC.
-- Incorporación de autenticación servidor-servidor (ServerAuth Flow).
+- Incorporación de flujos de certificación contextual y confianza distribuida (ServerAuth Flow).
+  - inspirados en mecanismos de autenticación contextual,
+    certificación de canal y validación de entidades heterogéneas
+    desarrollados empíricamente en el prototipo BotellaControl
+    bajo una misma autoridad de certificación
+    (ver [`docs/botellacontrol-evidence.md`](../docs/botellacontrol-evidence.md)).
 - Expansión hacia defensa distribuida en entornos Zero Trust.
 - Refactorización de PoC para interoperabilidad y escalabilidad.
 - Inclusión de benchmarks de rendimiento y validación técnica.
