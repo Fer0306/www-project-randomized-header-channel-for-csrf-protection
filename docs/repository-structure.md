@@ -62,6 +62,11 @@ www-project-randomized-header-channel-for-csrf-protection/
 │   │   └── formal-model-overview.md        → Versión intuitiva del modelo (lectura accesible)
 │   │
 │   ├── architecture.md                  → Arquitectura del sistema RHC
+│   ├── botellacontrol-evidence.md       → Documentación arquitectónica e histórica del prototipo
+│   │                                      distribuido BotellaControl como origen empírico
+│   │                                      de RHC/CIL y de los mecanismos de confianza
+│   │                                      servidor-a-servidor desarrollados antes de su
+│   │                                      formalización conceptual
 │   ├── breaker.md                       → Análisis de ruptura / testing de seguridad
 │   ├── builder.md                       → Construcción e implementación del protocolo
 │   ├── cross-standard-gap-analysis.md   → Análisis transversal de brechas estructurales en estándares

@@ -417,6 +417,8 @@ RHC es especialmente relevante en contextos donde la validación de identidad so
 
 ### Para revisores
 - [📋 Guía para Revisores OWASP](docs/adoption/reviewer-guide.md)
+- [🗣️ Peer Review y Retroalimentación Técnica](docs/peer-review-and-feedback.md)  
+  ↳ Revisiones externas, observaciones comunitarias y evolución conceptual del proyecto a partir del feedback recibido
 - [🌐 Alineación con el Ecosistema de Seguridad](docs/adoption/ecosystem-alignment.md)  
   ↳ Incluye cross-referencia con:  
     - **OWASP ASVS** → Application Security Verification Standard
@@ -470,7 +472,25 @@ Como autor, desarrollador e investigador, la concepción original, la documentac
 
 Este origen no es casual. Es parte de una identidad y de un propósito.
 
-RHC surgió de un problema real encontrado durante el desarrollo de un sistema con arquitectura SaaS de inventarios inteligentes— no de una sala de conferencias académica. La investigación empírica precedió a la formalización conceptual.
+RHC surgió a partir de un problema real de integridad y confianza en flujos de comunicación distribuidos, identificado durante el desarrollo de **BotellaControl**: un prototipo funcional orientado inicialmente a una arquitectura SaaS para inventarios inteligentes y monitoreo visual de contenido en envases translúcidos.
+
+Durante la evolución de la plataforma surgió la necesidad de establecer mecanismos de validación contextual, certificación de canal y confianza verificable entre entidades distribuidas que participaban en el flujo de comunicación.
+
+Esto condujo al desarrollo empírico de mecanismos de:
+
+- autenticación contextual entre entidades heterogéneas unificadas bajo una misma autoridad de certificación,
+  ↳ (servidores web, aplicaciones móviles nativas y entornos de desarrollo)
+- pre-certificación del canal de comunicación,
+- validación de identidad operacional,
+- registro federado de entidades confiables,
+- y protección de integridad del flujo de comunicación.
+
+Estos mecanismos fueron implementados inicialmente de forma independiente y sin conocimiento previo de estándares modernos como OAuth 2.0, mTLS o arquitecturas formales de trust layers distribuidas.
+
+La investigación empírica precedió a la formalización conceptual. Posteriormente, estos mecanismos evolucionarían hacia el **Núcleo del protocolo RHC** y la categoría conceptual denominada **Communication Integrity Layer (CIL)**.
+
+> Para contexto arquitectónico e histórico adicional:
+> [`docs/botellacontrol-evidence.md`](./docs/botellacontrol-evidence.md)
 
 > *“Compartir con responsabilidad es inspirar para construir el futuro.”*
 > — Fernando Flores Alvarado

@@ -196,6 +196,30 @@ La conversación contribuyó significativamente a la evolución conceptual y est
 
 ---
 
+### Precisión documental posterior sobre el origen empírico de RHC
+
+Como parte de la evolución documental del proyecto, posteriormente se incorporó
+una aclaración formal sobre el contexto original de BotellaControl utilizado como
+evidencia empírica temprana del mecanismo RHC.
+
+La documentación inicial enviada a OWASP hacía referencia a una
+*"real-world SaaS platform"* como contexto de origen. Posteriormente se precisó
+que BotellaControl corresponde a un prototipo funcional local concebido con
+arquitectura distribuida orientada a SaaS, dentro del cual surgieron de forma
+empírica mecanismos de autenticación contextual, certificación de canal y
+confianza verificable entre entidades distribuidas, desarrollados
+independientemente y sin conocimiento previo de estándares modernos como
+OAuth 2.0 o mTLS.
+
+Esta precisión documental no modifica la validez técnica del modelo RHC/FCHA,
+sino que fortalece la trazabilidad histórica, arquitectónica y conceptual
+del proyecto.
+
+> Ver documentación completa:
+> [`docs/botellacontrol-evidence.md`](./botellacontrol-evidence.md)
+
+---
+
 ### Impacto directo en la evolución del proyecto
 
 Esta discusión condujo directamente al desarrollo de:

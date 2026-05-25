@@ -40,12 +40,22 @@ y cómo RHC responde a ellos.
 
 ## 🧩 2. Caso: BotellaControl (Origen empírico, 2025)
 
+> **Nota de contexto y alcance:**  
+> El caso BotellaControl corresponde a un prototipo funcional distribuido — no un sistema desplegado públicamente — donde los mecanismos que posteriormente dieron origen a RHC fueron desarrollados e implementados empíricamente como respuesta a necesidades arquitectónicas reales detectadas durante la construcción de la plataforma.
+>
+> La evolución del sistema desde una arquitectura inicialmente orientada a SaaS hacia un modelo explícito de confianza verificable entre entidades distribuidas condujo al desarrollo de *mecanismos de autenticación contextual, certificación de canal y trust layer distribuida*, previamente a la formalización conceptual de RHC/CIL y sin conocimiento previo de estándares modernos como OAuth 2.0 o mTLS.
+>
+> La documentación arquitectónica completa del prototipo se encuentra en:
+> [`docs/botellacontrol-evidence.md`](./botellacontrol-evidence.md)
+
 | Evento observado | Propiedad FCHA | Respuesta RHC |
 |----------------|---------------|--------------|
 | Flujos podían reproducirse sin credenciales comprometidas | Flow replay / impersonation | Entropía por ciclo |
 | Validaciones JWT correctas pero insuficientes | Falta de verificación de continuidad | Canal dinámico |
 | Automatizaciones ejecutadas por secuencia válida | Confianza implícita en flujo | Validación contextual |
 | Repetición de patrones aceptada por el sistema | Predictibilidad estructural | Variabilidad controlada |
+| Canal certificado sin identidad de usuario | CIL independiente de capa de aplicación | Pre-certificación de canal |
+| Certificación de entidades heterogéneas (servidores, apps Android, apps iOS, IPs) mediante el mismo mecanismo | Mecanismo agnóstico al tipo de cliente | Autoridad de certificación de canal unificada |
 
 ---
 
