@@ -84,6 +84,16 @@ RHC introduce una capa que protege exactamente eso:
 
 ---
 
+### 📜 Contexto Histórico
+
+> *"El ataque Man-in-the-Middle no es un producto de la era digital.
+> Son 190 años de historia formulando la misma pregunta —
+> y RHC es la respuesta."*
+
+→ [Las Raíces Históricas de la Intercepción de Comunicaciones](docs/mitm-historical-context.md)
+
+---
+
 ## 🔴 El ataque que RHC mitiga: Flow Channel Hijacking Attack (FCHA)
 
 El **Flow Channel Hijacking Attack (FCHA)** es una clase de ataque en la que el atacante no rompe la seguridad del sistema — la rodea.
@@ -438,6 +448,30 @@ RHC es especialmente relevante en contextos donde la validación de identidad so
 
 ---
 
+## 🎓 Publicaciones académicas
+
+El proyecto RHC Protocol Core ha comenzado su proceso de difusión académica mediante publicaciones técnicas y revisión por pares.
+
+### Publicaciones disponibles
+
+- **RHC Protocol: A Randomized Header Channel for CSRF Protection at the Communication Integrity Layer**
+  - Autor: Fernando Flores Alvarado
+  - Plataforma: SSRN
+  - Fecha de publicación: 3 de junio de 2026
+  - PDF y resumen:
+    https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6808838
+
+### En revisión
+
+- **RHC Protocol: A Randomized Header Channel for CSRF Protection at the Communication Integrity Layer**
+  - Revista: Cyber Security and Applications
+  - Estado: Under Review
+
+📚 Ver índice completo de publicaciones:
+`publications/academic/README.md`
+
+---
+
 ## 📊 Estado actual del proyecto
 
 | Componente | Estado |
@@ -450,12 +484,14 @@ RHC es especialmente relevante en contextos donde la validación de identidad so
 | Middleware PSR-15 | 🔄 En desarrollo |
 | Revisión comunitaria independiente | 🔜 Pendiente |
 | Envío formal CAPEC (MITRE) | 🔜 En preparación |
+| Publicación SSRN | ✅ Publicada |
+| Publicación académica revisada por pares | 🔄 En revisión |
 
 ---
 
 ## 🔬 Avance del Analizador de entropía RHC - Fase 2 (en desarrollo)
 
-![Avance del analizador RHC](assets/images/avance-rhc-channel-entropy-metrics-viewer.png)  
+![Avance del analizador RHC](assets/images/entropy-analyzer/avance-rhc-channel-entropy-metrics-viewer.png)  
 
 *Vista preliminar del Analizador de entropía RHC en fase laboratorio: visualización de métricas de entropía y coherencia del canal a lo largo de una secuencia de solicitudes (Linea de tiempo).  
 La herramienta permite observar patrones, rupturas y variabilidad contextual entre headers y tokens.*  

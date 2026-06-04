@@ -26,7 +26,7 @@ Este documento sigue la convención **SemVer (Semantic Versioning)** en el forma
 **Estado:** ✅ Completada
 
 ### Cambios principales:
-- 🧠 Creación de la estructura base del repositorio (`RHC_Protocol_Core/`).
+- 🧠 Creación de la estructura base del repositorio (`www-project-randomized-header-channel-for-csrf-protection/`).
 - 📘 Documentación técnica principal:
   - `README.md` — Descripción general, licencias y estructura.
   - `methodology.md` — Fundamento técnico del protocolo.
@@ -107,15 +107,41 @@ modelo de dispersión aleatoria y entropía controlada (*Controlled Chaos*).
 - `resources/security-headers/README.md` — Documentación del recurso.
 
 #### 🖼️ Assets
-- `assets/images/avance-rhc-channel-entropy-metrics-viewer.png` — Captura del visor de entropía.
+- `assets/images/entropy-analyzer/avance-rhc-channel-entropy-metrics-viewer.png` — Captura del visor de entropía.
 - `assets/images/README.md` y `assets/README.md` — Documentación de recursos visuales.
-- `assets/images/paradigm-shift-scenario-modern-automation-rhc-comparison.png`
-- `assets/images/paradigm-shift-scenario-client-server-rhc-comparison.png`
+- `assets/images/paradigm-shift-scenario/modern-automation-rhc-comparison.png`
+- `assets/images/paradigm-shift-scenario/client-server-rhc-comparison.png`
 
-#### 📰 Publicaciones
-- Artículos publicados en Medium: ver `publications/medium/article_links.md`.
-- Borrador arXiv registrado: ver `publications/arxiv/README.md`.
-- Borradores Dev.to en preparación: ver `publications/devto/drafts/README.md`.
+#### 📰 Publicaciones académicas
+
+##### SSRN
+
+* Publicación del primer paper académico asociado al proyecto:
+
+  * *RHC Protocol: A Randomized Header Channel for CSRF Protection at the Communication Integrity Layer*
+  * Autor: Fernando Flores Alvarado
+  * Publicado en SSRN (Social Science Research Network)
+  * Fecha de publicación: 3 de junio de 2026
+  * 16 páginas
+  * Disponible en:
+    `publications/academic/ssrn/README.md`
+
+##### Revistas científicas
+
+* Envío de artículo científico para evaluación por pares:
+
+  * Revista: Cyber Security and Applications
+  * Estado: Under Review
+  * Seguimiento disponible en:
+    `publications/academic/journal-submissions/README.md`
+
+#### 📰 Publicaciones y difusión
+
+##### Divulgación técnica
+
+* Artículos publicados en Medium: ver `publications/medium/article_links.md`.
+* Material de preparación para preprints: ver `publications/arxiv/README.md`.
+* Borradores Dev.to en preparación: ver `publications/devto/drafts/README.md`.
 
 #### 🔗 Integración OWASP
 - Proyecto aceptado en OWASP Foundation — Incubator Stage (ID: NFRSD-6904).
@@ -159,7 +185,14 @@ modelo de dispersión aleatoria y entropía controlada (*Controlled Chaos*).
   como dimensión transversal complementaria.
 
 ### Descripción:
-Esta versión consolida el protocolo como un proyecto de investigación documentado, funcional y alineado con estándares OWASP. El repositorio pasa de estructura inicial a proyecto listo para revisión técnica oficial.
+
+Esta versión consolida el protocolo como un proyecto de investigación documentado, funcional y alineado con estándares OWASP.
+
+Durante esta etapa se completó la formalización conceptual del modelo FCHA/CIL, la implementación funcional de los cuatro niveles del protocolo, la alineación con estándares OWASP y la primera difusión académica del proyecto mediante la publicación del paper:
+
+*RHC Protocol: A Randomized Header Channel for CSRF Protection at the Communication Integrity Layer* (SSRN, junio de 2026).
+
+El repositorio pasa de una estructura experimental inicial a un proyecto de investigación técnicamente documentado, públicamente referenciado y preparado para revisión académica y comunitaria.
 
 ---
 
@@ -186,7 +219,7 @@ Esta versión consolida el protocolo como un proyecto de investigación document
 **Estado:** 📋 Planeada  
 
 ### Cambios previstos:
-- Publicación de paper técnico en *arXiv* y medios académicos.
+- Expansión de publicaciones académicas (arXiv, revistas científicas y otros repositorios de investigación).
 - Validación por comunidad OWASP y expertos en ciberseguridad.
 - Ampliación del enfoque hacia IA y Machine Learning aplicado a predicción de patrones.
 - Difusión en conferencias (OWASP Summit, GDG, DEFCON).

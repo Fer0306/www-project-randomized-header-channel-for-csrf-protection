@@ -28,7 +28,13 @@ www-project-randomized-header-channel-for-csrf-protection/
 │
 ├── 🛠️ assets/                           → Recursos para el repositorio.
 │   ├── images/                          → Recursos visuales (diagramas, esquemas)
-│   │   ├── avance-rhc-channel-entropy-metrics-viewer.png
+│   │   ├── mitm-historical              → Diagramas conceptuales e ilustraciones históricas
+│   │   │                                  utilizadas en el análisis de la evolución de los
+│   │   │                                  ataques de interceptación de comunicaciones
+│   │   ├── entropy-analyzer             → Diagramas, métricas y visualizaciones del
+│   │   │                                  Analizador de Entropía RHC
+│   │   ├── paradigm-shift-scenario      → Escenarios arquitectónicos ilustrativos sobre
+│   │   │                                  integridad dinámica del canal
 │   │   └── README.md
 │   └── README.md
 │
@@ -81,6 +87,9 @@ www-project-randomized-header-channel-for-csrf-protection/
 │   │                                      el modelo FCHA (Flow Channel Hijacking Attack)
 │   ├── installation.md                  → Guía de instalación
 │   ├── methodology.md                   → Fundamentos físico-matemáticos del protocolo
+│   ├── mitm-historical-context.md       → Contexto histórico de los ataques MITM desde
+│   │                                      1834 hasta la era moderna y su conexión con
+│   │                                      los fundamentos conceptuales de RHC
 │   ├── overview.md                      → Vista general del protocolo
 │   ├── paradigm-shift.md                → Cambio de paradigma en seguridad
 │   ├── paradigm-shift-scenarios.md      → Escenarios arquitectónicos ilustrativos sobre integridad
@@ -108,17 +117,28 @@ www-project-randomized-header-channel-for-csrf-protection/
 │   │   └── README.md                          → Documentación del recurso
 │   └── README.md                           → Índice y descripción de recursos reutilizables
 │
-├── 🌐 publications/                     → Publicaciones externas y borradores
-│   ├── medium/
-│   │   └── article_links.md                → Enlaces a publicaciones en Medium
-│   ├── devto/
-│   │   └── drafts/                         → Notas o borradores para artículos en Dev.to.
-│   │       └── README.md                   → Índice y resumen de los borradores.
-│   └── arxiv/
-│       └── README.md                       → Resumen de papers y enlaces a versiones en línea.
+├── 🌐 publications/                    → Publicaciones académicas, artículos técnicos y divulgación
+│   │
+│   ├── academic/                           → Papers, preprints y envíos a revistas científicas
+│   │   ├── ssrn/                              → Publicaciones académicas y preprints publicados en SSRN
+│   │   │   └── README.md                      → Índice de publicaciones SSRN y referencias académicas
+│   │   ├── journal-submissions/            → Artículos enviados a revistas científicas y conferencias
+│   │   │   └── README.md                      → Estado y seguimiento de manuscritos en evaluación
+│   │   └── README.md                       → Índice general de publicaciones académicas
+│   │
+│   ├── arxiv/                           → Material académico y preparación de preprints
+│   │   └── README.md                       → Índice de papers y enlaces a versiones en línea
+│   │
+│   ├── devto/                           → Borradores y contenido para Dev.to
+│   │   └── drafts/                         → Notas o borradores para artículos en Dev.to
+│   │       └── README.md                   → Índice y resumen de los borradores
+│   │
+│   └── medium/                          → Artículos publicados en Medium
+│       └── article_links.md                → Enlaces a publicaciones en Medium
 │
 ├── 🧭 roadmap/                         → Plan de desarrollo y registro histórico.
 │   ├── roadmap_2025.md                    → Objetivos y metas previstas para 2025.
+│   ├── roadmap_2026.md                    → Objetivos y metas previstas para 2026.
 │   └── changelog.md                       → Registro de cambios.
 │
 ├── 📄 NOTICE                           → Atribución de autoría y origen del proyecto.
