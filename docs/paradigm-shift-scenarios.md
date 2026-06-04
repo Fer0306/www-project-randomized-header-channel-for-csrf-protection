@@ -53,7 +53,7 @@ Este modelo es ampliamente utilizado actualmente en:
 
 A continuación se muestra una comparación conceptual entre un flujo tradicional y un flujo protegido mediante integridad dinámica del canal.
 
-![Modern Automation and Intelligent Chained Systems — Without RHC vs With RHC](../assets/images/paradigm-shift-scenario-modern-automation-rhc-comparison.png)
+![Modern Automation and Intelligent Chained Systems — Without RHC vs With RHC](../assets/images/paradigm-shift-scenario/modern-automation-rhc-comparison.png)
 > Figura 1 — Comparación ilustrativa entre flujo tradicional y flujo con integridad dinámica del canal.
 
 ---
@@ -174,7 +174,7 @@ Este patrón es ampliamente utilizado en:
 
 A continuación se muestra una comparación conceptual entre una arquitectura tradicional y una arquitectura con integridad dinámica del canal.
 
-![Client–Server and Microservices Architecture — Without RHC vs With RHC](../assets/images/paradigm-shift-scenario-client-server-rhc-comparison.png)
+![Client–Server and Microservices Architecture — Without RHC vs With RHC](../assets/images/paradigm-shift-scenario/client-server-rhc-comparison.png)
 > Figura 2 — Comparación ilustrativa entre flujo tradicional y flujo con integridad dinámica del canal.
 
 ---
