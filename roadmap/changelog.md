@@ -55,9 +55,9 @@ modelo de dispersión aleatoria y entropía controlada (*Controlled Chaos*).
 
 ---
 
-## 🧩 v1.1.0 — Controlled Expansion *(Q1 2026)*
+## 🧩 v1.1.0 — Controlled Expansion *(Junio 2026)*
 
-**Estado:** ✅ Completada — Abril 2026
+**Estado:** ✅ Completada — Junio 2026
 
 ### Cambios realizados:
 

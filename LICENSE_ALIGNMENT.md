@@ -56,10 +56,12 @@ Este modelo no introduce restricciones adicionales más allá de las definidas e
 
 | Archivo | Contenido | Aplicación |
 |---|---|---|
-| `/LICENSE` | Texto completo de Apache License 2.0 | Código, PoC y scripts |
-| `/LICENSE_CC` | Texto completo de CC BY 4.0 | Documentación y textos |
-| `/NOTICE` | Atribución oficial y resumen de derechos del autor | Todo el repositorio |
-| `/VERSION` | Número de versión técnica y codename | Identificación de versión y coherencia documental |
+| `/LICENSE` y `/LICENSE.md` | Texto completo de Apache License 2.0 | Código, PoC y scripts |
+| `/LICENSE_CC` (inglés) y `/LICENSE_CC.md` (español) | Resumen de CC BY 4.0 con enlace al texto legal oficial | Documentación y textos |
+| `/NOTICE` y `/NOTICE.md` | Atribución oficial y resumen de derechos del autor | Todo el repositorio |
+| `/VERSION` y `/VERSION.md` | Número de versión técnica, codename y estado del proyecto | Identificación de versión y coherencia documental |
+
+Las versiones `.md` son las que se enlazan desde el README y la documentación; las versiones sin extensión se conservan por compatibilidad con las convenciones habituales de licencias y atribución. Cada par debe mantenerse con el mismo contenido de fondo.
 
 ---
 

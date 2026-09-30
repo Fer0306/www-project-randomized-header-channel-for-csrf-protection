@@ -4,7 +4,7 @@ layout: col-sidebar
 title: OWASP Randomized Header Channel for CSRF Protection
 tags: example-tag
 level: 2
-type: documentation
+type: tool and documentation
 pitch: A security technique that introduces randomized header channels to strengthen CSRF protection in modern architectures.
 
 ---
