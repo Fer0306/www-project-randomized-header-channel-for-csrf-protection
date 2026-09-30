@@ -48,8 +48,8 @@ Esta obra es una creación original de **Fernando Flores Alvarado**
 y no puede ser representada como trabajo derivado sin la debida atribución  
 al autor original.
 
-**Versión:** 1.0.0 *(“Origin Entropy”)*  
-**Fecha:** Noviembre 2025  
+**Versión:** 1.1.0 *(“Controlled Expansion”)*  
+**Fecha:** Junio 2026  
 
 ---
 
